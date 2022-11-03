@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import { APP_PORT, DB_URL } from "./config";
 
 const app = express();
+import routes from "./routes";
 
 mongoose.connect(DB_URL, {
   useNewUrlParser: true,
