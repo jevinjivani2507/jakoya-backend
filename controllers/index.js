@@ -1,1 +1,1 @@
-export { default as productController } from './productController';
+export { default as medicineController } from './medicineController';

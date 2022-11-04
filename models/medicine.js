@@ -5,15 +5,15 @@ const medicineSchema = new Schema(
   {
     title: { type: String, required: true },
     quantity: { type: Number, required: true },
-    morningTime: { type: string, required: true },
-    afternoonTime: { type: string, required: true },
-    eveningTime: { type: string, required: true },
+    morningTime: { type: String, required: true },
+    afternoonTime: { type: String, required: true },
+    eveningTime: { type: String, required: true },
     morningDose: { type: Number, required: true },
     afternoonDose: { type: Number, required: true },
     eveningDose: { type: Number, required: true },
-    weekDays: { type: Array, required: true },
-    startDate: { type: Date, required: true },
-    endDate: { type: Date, required: true },
+    weekDays: { type: String, required: true },
+    startDate: { type: String, required: true },
+    endDate: { type: String, required: true },
   },
   { timestamps: true }
 );
