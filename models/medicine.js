@@ -1,11 +1,10 @@
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
-const productSchema = new Schema(
+const medicineSchema = new Schema(
   {
     title: { type: String, required: true },
     quantity: { type: Number, required: true },
-    singleDose : { type: Number, required: true },
     morningTime: { type: string, required: true },
     afternoonTime: { type: string, required: true },
     eveningTime: { type: string, required: true },
@@ -19,4 +18,4 @@ const productSchema = new Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Product", productSchema, "products");
+export default mongoose.model("Medicine", medicineSchema, "medicine");
